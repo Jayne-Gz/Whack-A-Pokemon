@@ -5,6 +5,11 @@
   <p align="center">
     Help Professor Oak get rid of the pesky Ratata with your Pokémon!
     <br />
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
+  
+## Inspiration
+  
+## How To Play
+  
+## Technologies Used
+ 
+## Outstanding Bugs/ Unfinished Functionality
