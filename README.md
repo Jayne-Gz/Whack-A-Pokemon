@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-<h3 align="center">Whack-A-Pokémon</h3>
+<h1 style="color:red;">Whack-A-Pokémon</h1>
   
   <p align="center">
     Help Professor Oak get rid of the pesky Ratata with your Pokémon!
