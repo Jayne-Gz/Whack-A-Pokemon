@@ -12,8 +12,10 @@
   
 ## How To Play
   
-  <p>This game only requires a mouse/cursor. The player clicks through dialogue to progress and clicks on the appropriate Pokémon (in this case, Ratata) to earn points. For each Ratata that the player clicks in a minute, the player will earn 20 points. Different types of Pokémon will also appear in order to throw off the player. If the player clicks on the wrong Pokémon, the player loses 10 points.   
+  <p>This game only requires a mouse/cursor. The player clicks on the appropriate Pokémon (in this case, Ratata) to earn points. For each Ratata that the player clicks in a minute, the player will earn 20 points. Different types of Pokémon will also appear in order to throw off the player. If the player clicks on the wrong Pokémon, the player loses 10 points.   
   
 ## Technologies Used
+ <p>JavaScript, HTML, and CSS<p>
  
 ## Outstanding Bugs/ Unfinished Functionality
+<p>Unforunately the Timer as well as the score board doesn't work. I did not have enough time to finish making the game entirely.<p>
