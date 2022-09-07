@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: "Press Start 2P", cursive;
+    background-color: rgb(95, 158, 160);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.scoretable{
+    font-size: 1.3em;
+    height: 100px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:white;
+    position: absolute;
+    left: 5%;
+    top: 5%; 
+    transform: translate(-5%, -5%);
+    border: 1px solid black;
+}
+.scoretable div {
+    display: flex;
+    justify-content: space-between;
+}
+.board{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 80px;
+}
+.hole{
+    background-color: rgb(194, 106, 24);
+    border-radius: 50%;
+    box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
+                inset 0 20px 20px 15px rgba(0, 0, 0, .3),
+                0 0 5px rgba(0, 0, 0, .5);
+    position: relative;
+    overflow: hidden;
+}
+.hole .mole{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    animation: rise .3s ease-out;
+}
+@keyframes rise {
+    0%{
+        transform: translateX(-50%) translateY(100%);
+    }
+    100%{
+        transform: translateX(-50%) translateY(0);
+    }
+}
+.modal{
+    cursor: default;
+    position: absolute;
+    color:white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(121, 58, 150);
+    pointer-events: all;
+    z-index: 1000;
+}
+.modal button{
+    padding: 1rem 2rem;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer; 
+    transition: 0.5s ease;
+    font-family: "Press Start 2P", cursive; 
+}
+.modal button:hover{
+    background: rgba(255,255,255, 0.6);
+    color: green;
+}
+.modal h1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.modal h2{
+    visibility: hidden;
+    
+}
+.highscore{
+    margin-left:10px;
+    animation:scorebump 0.5s ease infinite alternate;  
+}
+.display{
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.modalclose{
+    opacity: 0;
+    pointer-events: none;
+}
+@keyframes scorebump{
+    from{
+        transform: translateY(10px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}
+.cursor{
+    height: 110px;
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-image: url('assets/hammer.png');
+    background-size: 100% 100%;
+    transform: translate(-20%, -20%);
+    transition: transform .1s;
+    pointer-events: none;
+}
+.cursor.active{
+    transform: translate(-20%, -20%) rotate(-45deg);
+}
